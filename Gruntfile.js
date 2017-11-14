@@ -19,7 +19,6 @@ module.exports = function (grunt) {
             ' * Based on Bootstrap\n' +
             '*/\n',
     swatch: {
-      default:{},
       cerulean:{},
       cosmo:{},
       cyborg:{},

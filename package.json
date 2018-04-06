@@ -1,7 +1,7 @@
 {
   "name": "bootswatch",
   "description": "Bootswatch is a collection of themes for Bootstrap.",
-  "version": "4.0.0-beta.2",
+  "version": "4.0.0+1",
   "author": "Thomas Park",
   "homepage": "https://bootswatch.com",
   "license": "MIT",
@@ -13,13 +13,10 @@
     "node": ">=6"
   },
   "scripts": {
-    "postcss": "postcss --use autoprefixer --config build/js/postcss.js --replace dist/*/bootstrap*.css"
+    "postcss": "postcss --no-map --use autoprefixer --config build/js/postcss.js --replace dist/*/bootstrap.css"
   },
   "dependencies": {
-    "bootstrap": "~4.0.0-beta.2",
-    "jquery": ">=1.9.1",
-    "popper.js": "^1.11.0",
-	"select2": "4.0.5"
+    "bootstrap": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -33,6 +30,8 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-exec": "^1.0.1",
     "grunt-sass": "^2.0.0",
+    "jquery": ">=1.9.1",
+    "popper.js": "^1.12.9",
     "postcss-cli": "^4.1.0",
     "postcss-flexbugs-fixes": "^2.0.0"
   }
